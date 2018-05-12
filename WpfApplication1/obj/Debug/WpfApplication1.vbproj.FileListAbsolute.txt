@@ -1,0 +1,18 @@
+c:\users\adam al-jumaily\documents\visual studio 2015\Projects\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.vbprojResolveAssemblyReference.cache
+c:\users\adam al-jumaily\documents\visual studio 2015\Projects\WpfApplication1\WpfApplication1\obj\Debug\Application.g.vb
+c:\users\adam al-jumaily\documents\visual studio 2015\Projects\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.Resources.resources
+c:\users\adam al-jumaily\documents\visual studio 2015\Projects\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.vbproj.GenerateResource.Cache
+c:\users\adam al-jumaily\documents\visual studio 2015\Projects\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.g.vb
+c:\users\adam al-jumaily\documents\visual studio 2015\Projects\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.baml
+C:\Users\Adam Al-Jumaily\Documents\Visual Studio 2015\Projects\WpfApplication1\WpfApplication1\bin\Debug\Deja Vu Game.exe.config
+C:\Users\Adam Al-Jumaily\Documents\Visual Studio 2015\Projects\WpfApplication1\WpfApplication1\bin\Debug\Deja Vu Game.exe
+C:\Users\Adam Al-Jumaily\Documents\Visual Studio 2015\Projects\WpfApplication1\WpfApplication1\bin\Debug\Deja Vu Game.pdb
+C:\Users\Adam Al-Jumaily\Documents\Visual Studio 2015\Projects\WpfApplication1\WpfApplication1\bin\Debug\Deja Vu Game.xml
+C:\Users\Adam Al-Jumaily\Documents\Visual Studio 2015\Projects\WpfApplication1\WpfApplication1\obj\Debug\Deja Vu Game_MarkupCompile.cache
+C:\Users\Adam Al-Jumaily\Documents\Visual Studio 2015\Projects\WpfApplication1\WpfApplication1\obj\Debug\Deja Vu Game_MarkupCompile.lref
+C:\Users\Adam Al-Jumaily\Documents\Visual Studio 2015\Projects\WpfApplication1\WpfApplication1\obj\Debug\Deja Vu Game.g.resources
+C:\Users\Adam Al-Jumaily\Documents\Visual Studio 2015\Projects\WpfApplication1\WpfApplication1\obj\Debug\Deja Vu Game.exe
+C:\Users\Adam Al-Jumaily\Documents\Visual Studio 2015\Projects\WpfApplication1\WpfApplication1\obj\Debug\Deja Vu Game.xml
+C:\Users\Adam Al-Jumaily\Documents\Visual Studio 2015\Projects\WpfApplication1\WpfApplication1\obj\Debug\Deja Vu Game.pdb
+C:\Users\Adam Al-Jumaily\Documents\Visual Studio 2015\Projects\WpfApplication1\WpfApplication1\obj\Debug\Interop.WMPLib.dll
+C:\Users\Adam Al-Jumaily\Documents\Visual Studio 2015\Projects\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.vbproj.ResolveComReference.cache
