@@ -4,6 +4,9 @@ Imports System.Runtime.InteropServices
 Imports Microsoft.VisualBasic.Collection
 
 
+' NOT FOR MALICIOUS USE. '
+' This was an experiment in security, and should not be used against any persons or party.'
+
 Class MainWindow
 
     Dim timer As DispatcherTimer
@@ -21,17 +24,6 @@ Class MainWindow
 
         InitializeComponent()
 
-        'Dim player As New System.Media.SoundPlayer("C:\Users\Adam Al-Jumaily\Documents\Visual Studio 2015\Projects\WpfApplication1\WpfApplication1\Resources\im.wav")
-        'Dim player As New System.Media.SoundPlayer(Application.GetResourceStream(New Uri("Resources\im.wav", UriKind.Relative)).Stream)
-        'player.PlayLooping()
-
-        'My.Computer.Audio.Play(My.Resources.im, AudioPlayMode.BackgroundLoop)
-        'p.PlayLooping()
-
-        'p1.Source = New Uri("Resources\im.wav", UriKind.Relative)
-        ' song.LoadedBehavior = MediaState.Manual
-
-
         Dim memStream As New System.IO.MemoryStream
         My.Resources.imw.CopyTo(memStream)
         Dim byteArr() As Byte = memStream.ToArray
@@ -44,9 +36,6 @@ Class MainWindow
         song.IsMuted = False
         song.Position = TimeSpan.FromMilliseconds(0)
         song.Play()
-
-        ' Dim p1 As New WMPLib.WindowsMediaPlayer()
-        'p1.URL = "Resources\im.wav"
 
         transForm = New TranslateTransform(X, Y)
 
@@ -66,6 +55,7 @@ Class MainWindow
         song.Play()
     End Sub
 
+    ' Plays a sound when ctrl+alt is pressed
     Private Sub checkKeyPress(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
         If (Keyboard.IsKeyDown(Key.LeftCtrl) AndAlso Keyboard.IsKeyDown(Key.LeftAlt)) Then
             My.Computer.Audio.Play(My.Resources.nani, AudioPlayMode.Background)
@@ -75,25 +65,23 @@ Class MainWindow
         End If
     End Sub
 
+    ' Subroutine which handles a form close. Cancels the form close and plays a sound
     Private Sub Form1_Closing(sender As Object, e As _
-     System.ComponentModel.CancelEventArgs) Handles MyBase.Closing
+        System.ComponentModel.CancelEventArgs) Handles MyBase.Closing
         e.Cancel = True
         My.Computer.Audio.Play(My.Resources.what, AudioPlayMode.Background)
     End Sub
 
     Private Sub timerTick(sender As Object, e As EventArgs)
 
+        ' Checks all processes, if it's the cmd, taskmanager, or powershell, kill it.
         For Each proc As Process In Process.GetProcesses
-            If proc.ProcessName = "cmd" Then
+            If proc.ProcessName = "cmd" OrElse proc.ProcessName = "Taskmgr" OrElse proc.ProcessName = "powershell" Then
                 proc.Kill()
             End If
         Next
 
-        For Each proc As Process In Process.GetProcesses
-            If proc.ProcessName = "Taskmgr" Then
-                proc.Kill()
-            End If
-        Next
+        ' The rest of this subroutine just moves the car around the screen
 
         X += Xinc
         Y += Yinc
